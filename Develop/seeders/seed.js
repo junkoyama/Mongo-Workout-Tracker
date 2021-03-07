@@ -1,12 +1,18 @@
-let mongoose = require("mongoose");
-let db = require("../models");
+const express = require('express');
+const mongoose = require("mongoose");
+const logger = require('morgan');
+const db = require("../models");
+
+const PORT = process.env.PORT || 3000;
+
+const app = express();
 
 mongoose.connect("mongodb://localhost/workout", {
   useNewUrlParser: true,
   useFindAndModify: false
 });
 
-let workoutSeed = [
+const workoutSeed = [
   {
     day: new Date().setDate(new Date().getDate()-10),
     exercises: [
@@ -133,4 +139,8 @@ db.Workout.deleteMany({})
   .catch(err => {
     console.error(err);
     process.exit(1);
+  });
+
+  app.listen(PORT, () => {
+    console.log(`App running on port ${PORT}!`);
   });
