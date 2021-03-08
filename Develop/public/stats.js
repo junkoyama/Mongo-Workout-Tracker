@@ -1,4 +1,4 @@
-const API = require('./api')
+import { getWorkoutsInRange } from './api';
 
 function generatePalette() {
   const arr = [
@@ -207,4 +207,4 @@ function workoutNames(data) {
 }
 
 // get all workout data from back-end
-API.getWorkoutsInRange().then(populateChart);
+getWorkoutsInRange().then(populateChart);
