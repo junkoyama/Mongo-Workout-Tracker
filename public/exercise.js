@@ -1,4 +1,4 @@
-const API = require('./api')
+import { createWorkout, addExercise } from './api';
 
 const workoutTypeSelect = document.querySelector("#type");
 const cardioForm = document.querySelector(".cardio-form");
@@ -23,7 +23,7 @@ async function initExercise() {
   let workout;
 
   if (location.search.split("=")[1] === undefined) {
-    workout = await API.createWorkout()
+    workout = await createWorkout()
     console.log(workout)
   }
   if (workout) {
@@ -116,7 +116,7 @@ async function handleFormSubmit(event) {
     workoutData.duration = Number(resistanceDurationInput.value.trim());
   }
 
-  await API.addExercise(workoutData);
+  await addExercise(workoutData);
   clearInputs();
   toast.classList.add("success");
 }
