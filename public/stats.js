@@ -1,5 +1,3 @@
-import { getWorkoutsInRange } from './api';
-
 function generatePalette() {
   const arr = [
     '#003f5c',
@@ -207,4 +205,4 @@ function workoutNames(data) {
 }
 
 // get all workout data from back-end
-getWorkoutsInRange().then(populateChart);
+API.getWorkoutsInRange().then(populateChart);

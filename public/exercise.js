@@ -1,5 +1,3 @@
-import { createWorkout, addExercise } from './api';
-
 const workoutTypeSelect = document.querySelector("#type");
 const cardioForm = document.querySelector(".cardio-form");
 const resistanceForm = document.querySelector(".resistance-form");
@@ -23,7 +21,7 @@ async function initExercise() {
   let workout;
 
   if (location.search.split("=")[1] === undefined) {
-    workout = await createWorkout()
+    workout = await API.createWorkout()
     console.log(workout)
   }
   if (workout) {
@@ -116,7 +114,7 @@ async function handleFormSubmit(event) {
     workoutData.duration = Number(resistanceDurationInput.value.trim());
   }
 
-  await addExercise(workoutData);
+  await API.addExercise(workoutData);
   clearInputs();
   toast.classList.add("success");
 }
