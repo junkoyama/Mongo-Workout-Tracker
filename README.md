@@ -13,7 +13,7 @@
 
   <h2 align="center">
 
-![GitHub last commit](https://img.shields.io/github/last-commit/arensalmela/MongoMovies)
+![GitHub last commit](https://img.shields.io/github/last-commit/junkoyama/Mongo-Workout-Tracker)
 <br />
 <a href="#">View Demo</a>
 ·
