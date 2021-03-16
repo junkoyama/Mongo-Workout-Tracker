@@ -49,14 +49,6 @@ router.get("/api/workouts/range", (req, res) => {
 });
 
 router.get("/api/workouts", ({ query }, res) => {
-  // Workout.find({}).then((dbWorkout) => {
-  //   console.log(dbWorkout);
-  //   res.json((dbWorkout) ?? [])
-  // })
-  //   .catch((err) => {
-  //     res.json(err);
-  //   });
-
   Workout.aggregate([
     {
       $addFields: {
