@@ -116,4 +116,5 @@ $ git push
 
 ## Contact Me
 
-- Junko Yamazaki - [GitHub](https://github.com/junkoyama)
+- [GitHub](https://github.com/junkoyama)
+- [LinkedIn](https://www.linkedin.com/in/junkoyamazaki/)
