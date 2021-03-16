@@ -1,4 +1,3 @@
-<br />
 <p align="center">
 
   <h1 align="center">Mongo Workout Tracker</h1>
