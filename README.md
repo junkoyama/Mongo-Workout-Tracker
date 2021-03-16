@@ -61,8 +61,8 @@ As a user, I want to be able to view create and track daily workouts. I want to 
 
 ### Built With
 
-- [Mongoose]("https://mongoosejs.com/docs/guide.html")
-- [Express]("https://expressjs.com/")
+- [Mongoose](https://mongoosejs.com/docs/guide.html)
+- [Express](https://expressjs.com/)
 
 </br>
 
@@ -71,8 +71,6 @@ As a user, I want to be able to view create and track daily workouts. I want to 
 </br>
 
 Get a copy up on your local directory by running follow these simple steps.
-
-</br>
 
 ### Installation
 
@@ -91,14 +89,10 @@ Get a copy up on your local directory by running follow these simple steps.
     npm run seed
     ```
 
-</br>
-
 ## Usage
 
 - [My Deployed Heroku Link](https://junko-mongo-workout-tracker.herokuapp.com/)
 - :soon: Screenshots Coming Soon!
-
-</br>
 
 ## Roadmap
 
